@@ -1,0 +1,6 @@
+<h1>Quote generator</h1>
+<div id="quote-box">
+  <h2 id="text">Loading</h2>
+  <p id="author">Loading<p>
+  <button id="new-quote">New Quote</button>
+</div>
