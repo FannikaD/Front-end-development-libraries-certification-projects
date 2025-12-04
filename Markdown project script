@@ -1,0 +1,6 @@
+
+let text = document.getElementById('editor');
+const code = document.getElementById('preview');
+text.addEventListener('input', () => {
+  code.innerHTML = ''
+  code.innerHTML = marked.parse(text.value)});
