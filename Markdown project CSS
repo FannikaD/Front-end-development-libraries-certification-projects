@@ -1,0 +1,6 @@
+#editor{
+  width:100%;
+}
+#preview{
+  width:100%;
+}
