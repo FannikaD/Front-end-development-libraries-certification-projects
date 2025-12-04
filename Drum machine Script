@@ -1,0 +1,88 @@
+const q = document.getElementById('Q');
+const w = document.getElementById('W');
+const e = document.getElementById('E');
+const a = document.getElementById('A');
+const s = document.getElementById('S');
+const d = document.getElementById('D');
+const z = document.getElementById('Z');
+const x = document.getElementById('X');
+const c = document.getElementById('C');
+const Q = document.getElementById('heater1');
+const W = document.getElementById('heater2');
+const E = document.getElementById('heater3');
+const A = document.getElementById('heater4');
+const S = document.getElementById('clap');
+const D = document.getElementById('openHH');
+const Z = document.getElementById('kicknhat');
+const X = document.getElementById('kick');
+const C = document.getElementById('closedHH');
+const display = document.getElementById('display');
+
+Q.addEventListener('click',()=>{
+  q.play();
+  display.textContent='Heater 1';
+});
+W.addEventListener('click',()=>{
+  w.play();
+  display.textContent='Heater 2';
+});
+E.addEventListener('click',()=>{
+  e.play();
+  display.textContent='Heater 3';
+});
+A.addEventListener('click',()=>{
+  a.play();
+  display.textContent='Heater 4';
+});
+S.addEventListener('click',()=>{
+  s.play();
+  display.textContent='Clap';
+});
+D.addEventListener('click',()=>{
+  d.play();
+  display.textContent='Open-HH';
+});
+Z.addEventListener('click',()=>{
+  z.play();
+  display.textContent='Kick-n-Hat';
+});
+X.addEventListener('click',()=>{
+  x.play();
+  display.textContent='Kick';
+});
+C.addEventListener('click',()=>{
+  c.play();
+  display.textContent='Closed-HH';
+});
+
+function handleKeyDown(event) {
+  if (event.key === 'q'||event.key === 'Q') {
+    q.play();
+    display.textContent='Heater 1';
+  }else if (event.key === 'w'||event.key === 'W') {
+    w.play();
+    display.textContent='Heater 2';
+  }else if (event.key === 'e'||event.key === 'E') {
+    e.play();
+    display.textContent='Heater 3';
+  }else if (event.key === 'a'||event.key === 'A') {
+    a.play();
+    display.textContent='Heater 4';
+  }else if (event.key === 's'||event.key === 'S') {
+    s.play();
+    display.textContent='Clap';
+  }else if (event.key === 'd'||event.key === 'D') {
+    d.play();
+    display.textContent='Open-HH';
+  }else if (event.key === 'z'||event.key === 'Z') {
+    z.play();
+    display.textContent='Kick-n-Hat';
+  }else if (event.key === 'x'||event.key === 'X') {
+    x.play();
+    display.textContent='Kick';
+  }else if (event.key === 'c'||event.key === 'C') {
+    c.play();
+    display.textContent='Closed-HH';
+  }
+}
+document.addEventListener('keydown',handleKeyDown);
